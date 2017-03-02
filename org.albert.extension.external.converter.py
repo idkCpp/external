@@ -75,7 +75,7 @@ elif ALBERT_OP == "QUERY":
         to_name = to_unit[1] if result == 1 else to_unit[2]
         if to_name == True:
           to_name = to_unit[1] + "s"
-        desc = "%.3e %s %s %.3e %s" % (amount, from_name, comp_eq1,result, to_name)
+        desc = "%.3e %s %s %s %s" % (amount, from_name, comp_eq1,result, to_name)
     except ValueError as e:
       result = matches.group(1) + " is not a valid number"
       desc = "Expected format: \"conv <amount> <from-unit> <to-unit>\""
